@@ -11,13 +11,33 @@ body {
   margin: 0 auto;
 }
 
+#btn {
+  width: 208px;
+  height: 56px;
+  border-radius: 63px;
+  background-color: #1b1b1d;
+  transition: transform 0.1s ease-in-out;
+  text-align: center;
+  margin-top: 3px;
+  color: #fff;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  margin-bottom: 123px;
   color: #1b1b1d;
 }
 .navbar-brand {
+  width: 126px;
+  height: 50px;
 }
 .navbar-collapse {
   display: flex;
@@ -30,9 +50,10 @@ body {
   margin-right: 40px;
 
   a {
+    font-size: 18px;
     color: #1b1b1d;
     &:hover {
-      color: #636368;
+      color: #7c7c94;
     }
   }
 }
@@ -48,18 +69,37 @@ body {
     transform: scale(1.1);
   }
 }
-.buy-btn-wrapper {
-  padding: 15px 30px;
-  border-radius: 63px;
-  background-color: #1b1b1d;
-  transition: transform 0.1s ease-in-out;
 
-  &:hover {
-    transform: scale(1.05);
+/*Header content */
+
+.header-content {
+  margin-bottom: 131px;
+  display: flex;
+
+  h1 {
+    font-size: 124px;
+    font-weight: 800;
+    line-height: 140px;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #64646a;
+    line-height: 35px;
+    margin-bottom: 60px;
   }
 }
 
-#buy {
-  margin-top: 3px;
-  color: #fff;
+.header-content-wrapper {
+  max-width: 600px;
+}
+.btn-wrapper {
+}
+.img-wrapper {
+  img {
+    width: 600px;
+    height: 612px;
+    margin-left: 0px;
+  }
 }

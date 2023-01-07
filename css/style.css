@@ -11,11 +11,32 @@ body {
   margin: 0 auto;
 }
 
+#btn {
+  width: 208px;
+  height: 56px;
+  border-radius: 63px;
+  background-color: #1b1b1d;
+  transition: transform 0.1s ease-in-out;
+  text-align: center;
+  margin-top: 3px;
+  color: #fff;
+}
+#btn:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  margin-bottom: 123px;
   color: #1b1b1d;
+}
+
+.navbar-brand {
+  width: 126px;
+  height: 50px;
 }
 
 .navbar-collapse {
@@ -31,10 +52,11 @@ body {
   margin-right: 40px;
 }
 .nav-item a {
+  font-size: 18px;
   color: #1b1b1d;
 }
 .nav-item a:hover {
-  color: #636368;
+  color: #7c7c94;
 }
 
 .cart-wrapper {
@@ -48,17 +70,31 @@ body {
   transform: scale(1.1);
 }
 
-.buy-btn-wrapper {
-  padding: 15px 30px;
-  border-radius: 63px;
-  background-color: #1b1b1d;
-  transition: transform 0.1s ease-in-out;
+/*Header content */
+.header-content {
+  margin-bottom: 131px;
+  display: flex;
 }
-.buy-btn-wrapper:hover {
-  transform: scale(1.05);
+.header-content h1 {
+  font-size: 124px;
+  font-weight: 800;
+  line-height: 140px;
+  margin-bottom: 30px;
+}
+.header-content p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #64646a;
+  line-height: 35px;
+  margin-bottom: 60px;
 }
 
-#buy {
-  margin-top: 3px;
-  color: #fff;
+.header-content-wrapper {
+  max-width: 600px;
+}
+
+.img-wrapper img {
+  width: 600px;
+  height: 612px;
+  margin-left: 0px;
 }
