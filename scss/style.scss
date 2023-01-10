@@ -1,14 +1,31 @@
+$font-color:  -webkit-linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 0%, rgba(243, 244, 245, 0.2) 11.74%, #F3F4F5 27.92%, rgba(243, 244, 245, 0) 44.79%, rgba(243, 244, 245, 0.68) 60.42%, #F3F4F5 79.17%, #FFFFFF 100%);
+
+
 body {
   font-family: "Jost";
   font-weight: 500;
-  background-color: #eeeff1;
   font-size: 15px;
+  background-image: $font-color;
 }
 
 .container {
   max-width: 1240px;
   padding: 0px 20px;
   margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 70px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 35px;
+  color: #64646A;
+  font-weight: 400;
 }
 
 #btn {
@@ -20,6 +37,7 @@ body {
   text-align: center;
   margin-top: 3px;
   color: #fff;
+  display: block;
 
   &:hover {
     transform: scale(1.05);
@@ -28,10 +46,15 @@ body {
 
 /* Navbar */
 
+.header-wrapper {
+  background-color: #eeeff1;
+  padding-bottom: 122px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  padding-top: 24px;
   margin-bottom: 123px;
   color: #1b1b1d;
 }
@@ -50,7 +73,7 @@ body {
   margin-right: 40px;
 
   a {
-    font-size: 18px;
+    font-size: 16px;
     color: #1b1b1d;
     &:hover {
       color: #7c7c94;
@@ -83,10 +106,6 @@ body {
     margin-bottom: 30px;
   }
   p {
-    font-size: 24px;
-    font-weight: 400;
-    color: #64646a;
-    line-height: 35px;
     margin-bottom: 60px;
   }
 }
@@ -102,4 +121,81 @@ body {
     height: 612px;
     margin-left: 0px;
   }
+}
+
+
+/* Menu */
+
+.menu {
+  margin-top: 150px;
+  position: relative;
+  padding-bottom: 134px;
+}
+
+.menu-container {
+padding-right: 20px;
+  
+}
+
+.side-img {
+position: absolute;
+left: 0;
+width: 400px;
+height: 690px;
+}
+
+.menu-text {
+  margin-bottom: 90px;
+  max-width: 600px  ;
+}
+
+
+.menu-card-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+.menu-card {
+  
+  width: 400px;
+  display: block;
+  padding: 40px 40px;
+  background-color: #fff;
+  filter: drop-shadow(0px 30px 60px rgba(163, 168, 179, 0.15));
+  border-radius: 24px;
+  margin-right: 30px;
+
+
+  div {
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 600;
+    color: #1B1B1D;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 60px;
+  }
+
+  img {
+    margin-bottom: 60px;
+  }
+
+  
+}
+
+.catering {
+  width: 150px;
+  height: 150px;
+}
+
+.food {
+  width: 150px;
+  height: 150px;
+}
+
+.gelato {
+  width: 100px;
+  height: 150px;
 }
