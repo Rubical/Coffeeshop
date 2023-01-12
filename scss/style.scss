@@ -1,5 +1,14 @@
-$font-color:  -webkit-linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 0%, rgba(243, 244, 245, 0.2) 11.74%, #F3F4F5 27.92%, rgba(243, 244, 245, 0) 44.79%, rgba(243, 244, 245, 0.68) 60.42%, #F3F4F5 79.17%, #FFFFFF 100%);
-
+$font-color: -webkit-linear-gradient(
+  180deg,
+  #ffffff 0%,
+  #ffffff 0%,
+  rgba(243, 244, 245, 0.2) 11.74%,
+  #f3f4f5 27.92%,
+  rgba(243, 244, 245, 0) 44.79%,
+  rgba(243, 244, 245, 0.68) 60.42%,
+  #f3f4f5 79.17%,
+  #ffffff 100%
+);
 
 body {
   font-family: "Jost";
@@ -24,7 +33,7 @@ h2 {
 p {
   font-size: 24px;
   line-height: 35px;
-  color: #64646A;
+  color: #64646a;
   font-weight: 400;
 }
 
@@ -123,7 +132,6 @@ p {
   }
 }
 
-
 /* Menu */
 
 .menu {
@@ -133,45 +141,49 @@ p {
 }
 
 .menu-container {
-padding-right: 20px;
-  
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .side-img {
-position: absolute;
-left: 0;
-width: 400px;
-height: 690px;
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 690px;
+  z-index: 2;
 }
 
 .menu-text {
   margin-bottom: 90px;
-  max-width: 600px  ;
+  max-width: 600px;
+  text-align: center;
 }
-
 
 .menu-card-wrapper {
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
 }
 .menu-card {
-  
   width: 400px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px 40px;
   background-color: #fff;
   filter: drop-shadow(0px 30px 60px rgba(163, 168, 179, 0.15));
   border-radius: 24px;
   margin-right: 30px;
 
-
   div {
     font-size: 36px;
     line-height: 52px;
     font-weight: 600;
-    color: #1B1B1D;
+    color: #1b1b1d;
     margin-bottom: 8px;
+    align-self: flex-start;
   }
 
   p {
@@ -181,8 +193,6 @@ height: 690px;
   img {
     margin-bottom: 60px;
   }
-
-  
 }
 
 .catering {
@@ -200,14 +210,22 @@ height: 690px;
   height: 150px;
 }
 
+/* Brochure */
+
 .brochure {
+  margin-bottom: 114px;
   div {
     img {
       float: left;
+      margin: 0 21px 0 -120px;
     }
 
     h2 {
       padding-top: 78px;
+    }
+
+    p {
+      margin-bottom: 60px;
     }
   }
 }
