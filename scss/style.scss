@@ -127,7 +127,7 @@ p {
 /* Menu */
 
 .menu {
-  margin-top: 150px;
+  margin-top: 190px;
   position: relative;
   padding-bottom: 134px;
 }
@@ -198,4 +198,16 @@ height: 690px;
 .gelato {
   width: 100px;
   height: 150px;
+}
+
+.brochure {
+  div {
+    img {
+      float: left;
+    }
+
+    h2 {
+      padding-top: 78px;
+    }
+  }
 }
