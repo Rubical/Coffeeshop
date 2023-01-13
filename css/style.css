@@ -7,7 +7,6 @@ body {
 
 .container {
   max-width: 1240px;
-  padding: 0px 20px;
   margin: 0 auto;
 }
 
@@ -95,11 +94,20 @@ p {
   margin-bottom: 131px;
   display: flex;
 }
-.header-content h1 {
+.header-content .header-title {
   font-size: 124px;
   font-weight: 800;
   line-height: 140px;
-  margin-bottom: 30px;
+  margin-top: 31px;
+  position: relative;
+  z-index: 3;
+}
+.header-content .header-title img {
+  width: 73px;
+  height: 58px;
+  position: absolute;
+  right: 101px;
+  bottom: 31px;
 }
 .header-content p {
   margin-bottom: 60px;
@@ -114,48 +122,15 @@ p {
 
 .img-wrapper {
   position: relative;
+  margin-right: -100px;
+  margin-left: -21px;
 }
 
 .header-coffee-cup {
   width: 700px;
   height: 712px;
-  margin-left: 0px;
-  z-index: 2;
-}
-
-.reward {
-  width: 144px;
-  height: 113px;
-  position: absolute;
-  top: 31px;
-  right: 24px;
+  position: relative;
   z-index: 1;
-}
-
-.rating-wrapper {
-  width: 280px;
-  height: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 24px;
-  position: absolute;
-  bottom: 165px;
-  left: 0px;
-  z-index: 1;
-}
-
-.rating {
-  width: 232px;
-  height: 100px;
-}
-
-.circles {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: 0;
 }
 
 /* Menu */
@@ -251,6 +226,7 @@ p {
 /* Best sellers */
 .best-sellers {
   padding-top: 114px;
+  margin-bottom: 100px;
 }
 
 .best-selling-container {
@@ -261,16 +237,51 @@ p {
 
 .best-selling-text {
   margin-bottom: 178px;
+  max-width: 600px;
+  text-align: center;
 }
 
 .best-selling-card-wrapper {
   display: flex;
+  column-gap: 30px;
 }
 
 .best-selling-card {
-  max-width: 400px;
+  width: 393px;
+  background-color: white;
+  border-radius: 24px;
+  padding: 41px 30px 35px 0;
+}
+.best-selling-card small {
+  margin-left: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #64646a;
 }
 .best-selling-card img {
   width: 186px;
   height: 305px;
+  margin-top: -78px;
+  float: left;
+}
+.best-selling-card h3 {
+  margin-left: 202px;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 87px;
+}
+.best-selling-card p {
+  margin-left: 30px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.price-block {
+  display: flex;
+  margin-left: 30px;
+}
+.price-block .price {
+  font-size: 30px;
+  margin-top: 6px;
+  margin-right: 63px;
 }
