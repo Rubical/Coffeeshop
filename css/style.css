@@ -108,11 +108,54 @@ p {
 .header-content-wrapper {
   max-width: 600px;
 }
+.header-content-wrapper p {
+  max-width: 530px;
+}
 
-.img-wrapper img {
-  width: 600px;
-  height: 612px;
+.img-wrapper {
+  position: relative;
+}
+
+.header-coffee-cup {
+  width: 700px;
+  height: 712px;
   margin-left: 0px;
+  z-index: 2;
+}
+
+.reward {
+  width: 144px;
+  height: 113px;
+  position: absolute;
+  top: 31px;
+  right: 24px;
+  z-index: 1;
+}
+
+.rating-wrapper {
+  width: 280px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 165px;
+  left: 0px;
+  z-index: 1;
+}
+
+.rating {
+  width: 232px;
+  height: 100px;
+}
+
+.circles {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0;
 }
 
 /* Menu */
@@ -203,4 +246,31 @@ p {
 }
 .brochure div p {
   margin-bottom: 60px;
+}
+
+/* Best sellers */
+.best-sellers {
+  padding-top: 114px;
+}
+
+.best-selling-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-selling-text {
+  margin-bottom: 178px;
+}
+
+.best-selling-card-wrapper {
+  display: flex;
+}
+
+.best-selling-card {
+  max-width: 400px;
+}
+.best-selling-card img {
+  width: 186px;
+  height: 305px;
 }
