@@ -36,6 +36,10 @@ p {
   font-weight: 400;
 }
 
+img {
+  pointer-events: none;
+}
+
 #btn {
   width: 208px;
   height: 56px;
@@ -164,7 +168,7 @@ p {
   align-items: center;
 }
 
-.side-img {
+.side-img-menu {
   position: absolute;
   left: 0;
   width: 400px;
@@ -282,13 +286,14 @@ p {
   img {
     width: 186px;
     height: 305px;
-    margin-top: -78px;
+    margin-top: -119px;
     float: left;
   }
   h3 {
     margin-left: 202px;
     font-weight: 600;
     font-size: 40px;
+    line-height: 44px;
     margin-bottom: 87px;
   }
   p {
