@@ -43,10 +43,6 @@ p {
   font-weight: 400;
 }
 
-img {
-  pointer-events: none;
-}
-
 #btn {
   width: 208px;
   height: 56px;
@@ -434,15 +430,21 @@ img {
     line-height: 28px;
   }
 }
+
 .next__review-btn {
   background-color: rgba(227, 227, 227, 0.683);
   border-radius: 50%;
   padding: 15px 15px;
   margin-right: 24px;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, border 0.1s ease-in;
+  border: 2px solid rgba(255, 255, 255, 0);
 
   &:hover {
     background-color: rgb(205, 203, 203);
+  }
+
+  &:active {
+    border: 2px solid #1b1b1d;
   }
 }
 
@@ -454,6 +456,15 @@ img {
 }
 
 /* Footer */
+
+footer {
+  a {
+    transition: color 0.1s ease-in;
+  }
+  a:hover {
+    color: #1b1b1d;
+  }
+}
 
 .footer-content {
   display: grid;
