@@ -13,6 +13,10 @@ body {
   align-items: center;
 }
 
+.none {
+  display: none;
+}
+
 h2 {
   margin-bottom: 25px;
   font-size: 64px;
@@ -54,13 +58,28 @@ img {
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding-top: 24px;
   margin-bottom: 123px;
   color: #1b1b1d;
 }
 
-.navbar-brand {
+#navOpen {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.nav-open-svg {
+  width: 30px;
+}
+.nav-open-svg path {
+  fill: #1b1b1d;
+}
+
+.navbar-logo {
   width: 126px;
   height: 50px;
 }
@@ -164,7 +183,10 @@ img {
 
 .menu-card-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 30px;
 }
 
 .menu-card {
@@ -176,7 +198,6 @@ img {
   background-color: #fff;
   filter: drop-shadow(0px 30px 60px rgba(163, 168, 179, 0.15));
   border-radius: 24px;
-  margin-right: 30px;
 }
 .menu-card div {
   font-size: 36px;
@@ -315,31 +336,10 @@ img {
   margin-bottom: 60px;
 }
 
-.app-advertising-img-wrapper {
-  float: right;
-  position: relative;
-  width: 785px;
-  height: 731px;
-  margin-top: -186px;
-  margin-right: -50px;
-}
-
 .app-advertising-img-cofee-card {
-  width: 497px;
-  height: 727px;
-  position: absolute;
-  top: 26px;
-  right: 192px;
-  z-index: 1;
-}
-
-.app-advertising-img-ellipse {
-  width: 648px;
-  height: 440px;
-  position: absolute;
-  bottom: 110px;
-  right: 70px;
-  z-index: 0;
+  max-width: 497px;
+  max-height: 727px;
+  margin-top: -176px;
 }
 
 /* Feedback */
@@ -364,7 +364,6 @@ img {
 
 .feedback-card {
   max-width: 468px;
-  padding: 40px 40px;
   margin-right: 200px;
   background-color: #fff;
   display: flex;
@@ -373,21 +372,21 @@ img {
   border-radius: 16px;
 }
 .feedback-card img {
-  max-width: 468px;
   border-radius: 16px 16px 0px 0px;
   margin-bottom: 40px;
-  margin-top: -40px;
 }
 .feedback-card p {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #1b1b1d;
+  padding: 32px 40px 40px 40px;
 }
 
 .card-title-wrapper {
   display: flex;
   align-self: flex-start;
+  padding: 0 40px;
 }
 .card-title-wrapper h4 {
   font-weight: 600;
@@ -467,9 +466,14 @@ img {
   margin-bottom: 40px;
 }
 .footer-logo-text p {
+  max-width: 560px;
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
+}
+
+.footer-contacts {
+  margin-top: 20px;
 }
 
 .footer-email-wrapper {
@@ -502,6 +506,7 @@ img {
 }
 
 .footer-navi p {
+  max-width: 468px;
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
@@ -571,4 +576,156 @@ hr {
   line-height: 30px;
   color: #64646a;
   margin: 0 12px;
+}
+
+@media (max-width: 1380px) {
+  h2 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Header */
+  .header-wrapper {
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    margin-bottom: 70px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  #navOpen {
+    display: block;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-content .header-title {
+    font-size: 80px;
+    line-height: 120px;
+    margin-bottom: 30px;
+  }
+
+  .img-wrapper {
+    position: relative;
+    margin: 0 0;
+  }
+
+  /* Menu */
+  .menu {
+    margin-top: 120px;
+  }
+  .menu h2 {
+    text-align: center;
+  }
+
+  .menu-card-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .side-img-menu {
+    width: 200px;
+    height: 345px;
+  }
+
+  /* Brochure */
+  .brochure div img {
+    margin: 0 0;
+  }
+
+  .brochure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brochure-container button {
+    align-self: flex-start;
+  }
+
+  /* Best-sellers */
+  .best-selling-card-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 120px;
+  }
+
+  /* App-advertising */
+  .app-advertising-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .app-advertising-img-cofee-card {
+    margin-top: 30px;
+    max-width: 95%;
+  }
+
+  .app-adverising-side-img {
+    width: 240px;
+    height: 515px;
+  }
+
+  /* Feedback */
+  .feedback-coffee__blur {
+    width: 300px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .feedback-coffee {
+    width: 152px;
+    top: 1024px;
+  }
+
+  .feedback-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .feedback-card {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-rating {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-btns {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .card-title-wrapper img {
+    margin: 0 0;
+    width: 40%;
+  }
+
+  /* Footer */
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px;
+  }
 }
