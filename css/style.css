@@ -18,8 +18,6 @@ body {
 }
 
 .blur {
-  touch-action: none;
-  -ms-touch-action: none;
   overflow-y: hidden;
   border-right: 17px solid #eeeff1;
 }
@@ -146,7 +144,7 @@ p {
 
 .modal-box-overlay {
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 }
 
 .modal-box-item {
