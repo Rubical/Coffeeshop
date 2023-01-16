@@ -18,7 +18,8 @@ body {
 }
 
 .blur {
-  position: relative;
+  touch-action: none;
+  -ms-touch-action: none;
   overflow-y: hidden;
   border-right: 17px solid #eeeff1;
 }
@@ -131,7 +132,7 @@ p {
 }
 .modal-box a {
   color: #1b1b1d;
-  font-size: 30px;
+  font-size: 35px;
 }
 .modal-box a:hover {
   color: #7c7c94;
@@ -144,6 +145,7 @@ p {
 }
 
 .modal-box-overlay {
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 
