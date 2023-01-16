@@ -18,6 +18,7 @@ body {
 }
 
 .blur {
+  position: relative;
   overflow-y: hidden;
   border-right: 17px solid #eeeff1;
 }
