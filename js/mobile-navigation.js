@@ -3,13 +3,15 @@ const body = document.body;
 const btnOpen = document.querySelector("[data-action = open]");
 const btnClose = document.querySelector("[data-action = close]");
 
-const btnOpenCoords = btnOpen.getBoundingClientRect();
-btnClose.style.position = "fixed";
-btnClose.style.left = btnOpenCoords.left + "px";
-
 btnOpen.addEventListener("click", function () {
-  mobileNav.classList.remove("none");
+  const btnOpenCoords = btnOpen.getBoundingClientRect();
 
+  btnClose.style.position = "fixed";
+
+  btnClose.style.left = btnOpenCoords.left + "px";
+  console.log(btnClose.style.left);
+
+  mobileNav.classList.remove("none");
   disableScroll();
   console.log(btnClose.getBoundingClientRect());
 });
