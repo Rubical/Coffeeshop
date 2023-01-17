@@ -29,9 +29,14 @@ body {
   display: none;
 }
 
-.blur {
-  overflow-y: hidden;
-  border-right: 17px solid #eeeff1;
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 h2 {
@@ -138,7 +143,7 @@ p {
   position: fixed;
   width: 100%;
   height: 100%;
-  border-right: 20px solid #eeeff1 ;
+  border-right: 20px solid #eeeff1;
   background-color: #eeeff1;
   z-index: 10;
   a {
@@ -672,7 +677,7 @@ hr {
   p {
     font-size: 22px;
   }
-  
+
   .container {
     padding: 0 20px;
   }

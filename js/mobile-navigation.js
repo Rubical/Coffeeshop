@@ -1,19 +1,29 @@
-const overflowWrapper = document.querySelector(".overflow-wrapper");
 const mobileNav = document.querySelector(".modal-box");
-const body = document.querySelector("body");
-const mobileNavOpenBtn = document.querySelector(".nav-open-svg");
+const body = document.body;
+const btnOpen = document.querySelector("[data-action = open]");
+const btnClose = document.querySelector("[data-action = close]");
 
+btnOpen.addEventListener("click", function () {
+  mobileNav.classList.remove("none");
+  disableScroll();
+});
 
-body.addEventListener("click", function (event) {
-  if (event.target.dataset.action === 'open' ||  event.target.dataset.action === 'close') {
-  overflowWrapper.classList.toggle("blur");
-  } 
-    overflowWrapper.classList.contains("blur") 
-    ?
-      (mobileNavOpenBtn.src = "./image/icons/nav-close.svg",
-      mobileNav.classList.remove("none"))
-      
-    : mobileNavOpenBtn.innerHTML = `img src="./image/icons/nav-close.svg" alt="" class="nav-open-svg`;
-      mobileNav.classList.add("none");
-    }
-  );
+btnClose.addEventListener("click", function () {
+  mobileNav.classList.add("none");
+  enableScroll();
+});
+
+function disableScroll() {
+  let pagePosition = window.scrollY;
+  document.body.classList.add("disable-scroll");
+  document.body.dataset.position = pagePosition;
+  document.body.style.top = -pagePosition + "px";
+}
+
+function enableScroll() {
+  let pagePosition = parseInt(document.body.dataset.position, 10);
+  document.body.style.top = "auto";
+  document.body.classList.remove("disable-scroll");
+  window.scroll({ top: pagePosition, left: 0 });
+  document.body.removeAttribute("data-position");
+}
