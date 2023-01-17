@@ -160,7 +160,7 @@ p {
 
 .modal-box-btn-wrapper {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
