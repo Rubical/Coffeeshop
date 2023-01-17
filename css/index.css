@@ -127,8 +127,8 @@ p {
 /* Modal box */
 .modal-box {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
   border-right: 20px solid #eeeff1;
   background-color: #eeeff1;
   z-index: 10;
