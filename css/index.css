@@ -127,7 +127,7 @@ p {
 /* Modal box */
 .modal-box {
   position: fixed;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   border-right: 20px solid #eeeff1;
   background-color: #eeeff1;
@@ -160,7 +160,7 @@ p {
 
 .modal-box-btn-wrapper {
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
