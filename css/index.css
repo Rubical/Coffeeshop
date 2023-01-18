@@ -223,7 +223,7 @@ p {
   left: 0;
   width: 400px;
   height: 690px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .menu-text {
