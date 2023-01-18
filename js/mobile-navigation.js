@@ -51,14 +51,14 @@ mobileNav.addEventListener("click", function (event) {
   } else if (event.target.dataset.location == "download") {
     hideModal();
     enableScroll();
-    download.scrollIntoView({ block: "center", behavior: "smooth" });
+    download.scrollIntoView({ block: "end", behavior: "smooth" });
   } else if (event.target.dataset.location == "reviews") {
     hideModal();
     enableScroll();
-    reviews.scrollIntoView({ block: "center", behavior: "smooth" });
+    reviews.scrollIntoView({ block: "start", behavior: "smooth" });
   } else if (event.target.dataset.location == "contacts") {
     hideModal();
     enableScroll();
-    contacts.scrollIntoView({ block: "start", behavior: "smooth" });
+    contacts.scrollIntoView({ block: "center", behavior: "smooth" });
   }
 });

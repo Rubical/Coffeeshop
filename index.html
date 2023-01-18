@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
     <link rel="preload" href="https://fonts.googleapis.com" />
     <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
@@ -123,7 +123,7 @@
 
       <!-- Menu -->
 
-      <section class="menu">
+      <section class="menu" id="cafeMenu">
         <div class="container">
           <img
             class="side-img-menu"
@@ -135,7 +135,7 @@
             A drink from the ‘My Alowishus’ bottled brews range OR grab one of
             our delicious coffee’s.
           </p>
-          <div class="menu-card-wrapper" id="cafeMenu">
+          <div class="menu-card-wrapper">
             <div class="menu-card">
               <div class="card-title">Our Catering</div>
               <p>Alowishus Catering, delicious drop off Catering</p>
@@ -266,14 +266,18 @@
           <div class="app-advertising-content">
             <div class="app-advertising-content-wrapper">
               <h2>Instant Coffee At Your Home</h2>
-              <p id="download">
+              <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
-              <a id="btn" href="https://play.google.com/store/apps?hl=ru&gl=US"
-                >DOWNLOAD OUR APP</a
-              >
+              <div id="download" class="app-advers-btn-wrapper">
+                <a
+                  id="btn"
+                  href="https://play.google.com/store/apps?hl=ru&gl=US"
+                  >DOWNLOAD OUR APP</a
+                >
+              </div>
             </div>
             <img
               class="app-advertising-img-cofee-card"
@@ -286,7 +290,7 @@
 
       <!-- Feedback -->
 
-      <section class="feedback" id="reviews">
+      <section class="feedback">
         <div class="container">
           <img
             class="feedback-coffee__blur"
@@ -294,7 +298,7 @@
             alt="coffee-cup"
           />
           <div class="feedback-content">
-            <div class="feedback-card">
+            <div class="feedback-card" id="reviews">
               <img
                 src="./image/section-customers/customer.jpg"
                 alt="customer"
@@ -350,7 +354,7 @@
         </div>
       </section>
 
-      <footer id="contacts">
+      <footer>
         <div class="container">
           <div class="footer-content">
             <div class="footer-logo-text">
@@ -361,7 +365,7 @@
                 and of course you, our customers.
               </p>
             </div>
-            <div class="footer-contacts">
+            <div class="footer-contacts" id="contacts">
               <h3>Contact Alowishus!</h3>
               <div class="footer-email-wrapper">
                 <a class="footer-button" href="mailto:alowishus@gmail.com">

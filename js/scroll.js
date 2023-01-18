@@ -7,9 +7,9 @@ const navBar = document.querySelector(".navbar-nav");
 
 navBar.addEventListener("click", function (event) {
   if (event.target.dataset.location == "cafeMenu") {
-    cafeMenu.scrollIntoView({ block: "center", behavior: "smooth" });
+    cafeMenu.scrollIntoView({ block: "start", behavior: "smooth" });
   } else if (event.target.dataset.location == "download") {
-    download.scrollIntoView({ block: "center", behavior: "smooth" });
+    download.scrollIntoView({ block: "end", behavior: "smooth" });
   } else if (event.target.dataset.location == "reviews") {
     reviews.scrollIntoView({ block: "start", behavior: "smooth" });
   } else if (event.target.dataset.location == "contacts") {

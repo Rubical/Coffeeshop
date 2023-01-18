@@ -1,171 +1,172 @@
+@import "main";
+
 @media (max-width: 1380px) {
+  h2 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Header */
+
+  .header-wrapper {
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    margin-bottom: 70px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  #navOpen {
+    display: flex;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    .header-title {
+      font-size: 70px;
+      line-height: 120px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+    margin: 0 0;
+  }
+
+  /* Menu */
+
+  .menu {
+    margin-top: 120px;
     h2 {
-      font-size: 56px;
+      text-align: center;
     }
-  
-    p {
-      font-size: 22px;
-    }
-  
-    .container {
-      padding: 0 20px;
-    }
-  
-    /* Header */
-  
-    .header-wrapper {
-      padding-bottom: 0;
-    }
-  
-    .navbar {
-      margin-bottom: 70px;
-    }
-  
-    .navbar-collapse {
-      display: none;
-    }
-  
-    #navOpen {
-      display: flex;
-    }
-  
-    .header-content {
-      flex-wrap: wrap;
-      justify-content: center;
-      .header-title {
-        font-size: 70px;
-        line-height: 120px;
-        margin-bottom: 30px;
-      }
-    }
-  
-    .img-wrapper {
-      position: relative;
-      margin: 0 0;
-    }
-  
-    /* Menu */
-  
-    .menu {
-      margin-top: 120px;
-      h2 {
-        text-align: center;
-      }
-    }
-  
-    .menu-card-wrapper {
-      flex-wrap: wrap;
-    }
-  
-    .side-img-menu {
-      width: 200px;
-      height: 345px;
-    }
-  
-    /* Brochure */
-  
-    .brochure {
-      div {
-        img {
-          margin: 0 0;
-        }
-      }
-    }
-  
-    .brochure-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      button {
-        align-self: flex-start;
-      }
-    }
-  
-    /* Best-sellers */
-  
-    .best-selling-card-wrapper {
-      justify-content: center;
-      flex-wrap: wrap;
-      row-gap: 120px;
-    }
-  
-    /* App-advertising */
-  
-    .app-advertising-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .app-advertising-img-cofee-card {
-      margin-top: 30px;
-      max-width: 95%;
-    }
-  
-    .app-adverising-side-img {
-      width: 240px;
-      height: 515px;
-    }
-  
-    /* Feedback */
-  
-    .feedback-coffee__blur {
-      width: 300px;
-      height: 450px;
-      left: 0px;
-      top: 0px;
-    }
-  
-    .feedback-coffee {
-      width: 152px;
-      top: 1024px;
-    }
-  
-    .feedback-content {
-      flex-wrap: wrap;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  
-    .feedback-card {
-      margin-right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .feedback-rating {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .review-btns {
-      display: flex;
-      flex-direction: row;
-      align-self: center;
-      margin-bottom: 20px;
-    }
-  
-    .card-title-wrapper {
+  }
+
+  .menu-card-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .side-img-menu {
+    width: 200px;
+    height: 345px;
+  }
+
+  /* Brochure */
+
+  .brochure {
+    div {
       img {
         margin: 0 0;
-        width: 40%;
-      }
-    }
-  
-    /* Footer */
-  
-    .footer-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      row-gap: 100px;
-    }
-    .footer-logo-text {
-      img {
-        width: 95%;
       }
     }
   }
-  
+
+  .brochure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      align-self: flex-start;
+    }
+  }
+
+  /* Best-sellers */
+
+  .best-selling-card-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 120px;
+  }
+
+  /* App-advertising */
+
+  .app-advertising-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .app-advertising-img-cofee-card {
+    margin-top: 30px;
+    max-width: 95%;
+  }
+
+  .app-adverising-side-img {
+    width: 240px;
+    height: 515px;
+  }
+
+  /* Feedback */
+
+  .feedback-coffee__blur {
+    width: 300px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .feedback-coffee {
+    width: 152px;
+    top: 1024px;
+  }
+
+  .feedback-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .feedback-card {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-rating {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-btns {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .card-title-wrapper {
+    img {
+      margin: 0 0;
+      width: 40%;
+    }
+  }
+
+  /* Footer */
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px;
+  }
+  .footer-logo-text {
+    img {
+      width: 95%;
+    }
+  }
+}
