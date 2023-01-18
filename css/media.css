@@ -568,6 +568,9 @@ hr {
       line-height: 120px;
       margin-bottom: 30px; }
 
+  .header-content-wrapper {
+    margin-bottom: 50px; }
+
   .img-wrapper {
     position: relative;
     margin: 0 0; }
@@ -586,6 +589,8 @@ hr {
     height: 345px; }
 
   /* Brochure */
+  .brochure a {
+    align-self: flex-start; }
   .brochure div img {
     margin: 0 0; }
 
@@ -608,6 +613,9 @@ hr {
     flex-wrap: wrap;
     justify-content: center; }
 
+  .app-advertising-content-wrapper {
+    margin-bottom: 30px; }
+
   .app-advertising-img-cofee-card {
     margin-top: 30px;
     max-width: 95%; }
@@ -617,6 +625,9 @@ hr {
     height: 515px; }
 
   /* Feedback */
+  .feedback {
+    padding-top: 100px; }
+
   .feedback-coffee__blur {
     width: 300px;
     height: 450px;
@@ -656,10 +667,12 @@ hr {
   .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     row-gap: 100px; }
 
-  .footer-logo-text img {
-    width: 95%; } }
+  .footer-logo-text {
+    margin-bottom: 0; }
+    .footer-logo-text img {
+      width: 95%; } }
 
 /*# sourceMappingURL=media.css.map */

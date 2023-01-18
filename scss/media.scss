@@ -41,6 +41,10 @@
     }
   }
 
+  .header-content-wrapper {
+    margin-bottom: 50px;
+  }
+
   .img-wrapper {
     position: relative;
     margin: 0 0;
@@ -67,6 +71,9 @@
   /* Brochure */
 
   .brochure {
+    a {
+      align-self: flex-start;
+    }
     div {
       img {
         margin: 0 0;
@@ -100,6 +107,10 @@
     justify-content: center;
   }
 
+  .app-advertising-content-wrapper {
+    margin-bottom: 30px;
+  }
+
   .app-advertising-img-cofee-card {
     margin-top: 30px;
     max-width: 95%;
@@ -111,6 +122,10 @@
   }
 
   /* Feedback */
+
+  .feedback {
+    padding-top: 100px;
+  }
 
   .feedback-coffee__blur {
     width: 300px;
@@ -161,10 +176,11 @@
   .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     row-gap: 100px;
   }
   .footer-logo-text {
+    margin-bottom: 0;
     img {
       width: 95%;
     }
