@@ -30,16 +30,16 @@
           </button>
           <ul class="modal-box-overlay">
             <li class="modal-box-item">
-              <a href="#">Cafe menu</a>
+              <a data-location="cafeMenu">Cafe menu</a>
             </li>
             <li class="modal-box-item">
-              <a href="#">About us</a>
+              <a data-location="download">Download</a>
             </li>
             <li class="modal-box-item">
-              <a href="#">Find us</a>
+              <a data-location="reviews">Reviews</a>
             </li>
             <li class="modal-box-item">
-              <a href="#">Alowishus Catering</a>
+              <a data-location="contacts">Contacts</a>
             </li>
           </ul>
           <div class="modal-box-btn-wrapper">
@@ -70,22 +70,28 @@
               <div class="navbar-collapse">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Cafe menu</a>
+                    <a data-location="cafeMenu" class="nav-link">Cafe menu</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a data-location="download" class="nav-link">Download</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Find us</a>
+                    <a data-location="reviews" class="nav-link">Reviews</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Alowishus Catering</a>
+                    <a data-location="contacts" class="nav-link">Contacts</a>
                   </li>
                 </ul>
                 <a class="cart-wrapper" href="./basket.html">
                   <img src="./image/icons/shopping-cart.svg" alt="cart" />
                 </a>
-                <a class="buy-gift-vouchers" id="btn" href="./basket.html" type="submit">BUY GIFT VOUCHERS</a>
+                <a
+                  class="buy-gift-vouchers"
+                  id="btn"
+                  href="./basket.html"
+                  type="submit"
+                  >BUY GIFT VOUCHERS</a
+                >
               </div>
             </nav>
 
@@ -97,7 +103,11 @@
                   A drink from the ‘My Alowishus’ bottled brews range OR grab
                   one of our delicious coffee’s.
                 </p>
-                <a id="btn" href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1">DOWNLOAD APP</a>
+                <a
+                  id="btn"
+                  href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"
+                  >DOWNLOAD APP</a
+                >
               </div>
               <div class="img-wrapper">
                 <img
@@ -125,7 +135,7 @@
             A drink from the ‘My Alowishus’ bottled brews range OR grab one of
             our delicious coffee’s.
           </p>
-          <div class="menu-card-wrapper">
+          <div class="menu-card-wrapper" id="cafeMenu">
             <div class="menu-card">
               <div class="card-title">Our Catering</div>
               <p>Alowishus Catering, delicious drop off Catering</p>
@@ -244,7 +254,7 @@
         </div>
       </section>
 
-      <!-- App advertising --> 
+      <!-- App advertising -->
 
       <section class="app-advertising">
         <div class="container">
@@ -256,12 +266,14 @@
           <div class="app-advertising-content">
             <div class="app-advertising-content-wrapper">
               <h2>Instant Coffee At Your Home</h2>
-              <p>
+              <p id="download">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
-              <a id="btn" href="https://play.google.com/store/apps?hl=ru&gl=US">DOWNLOAD OUR APP</a>
+              <a id="btn" href="https://play.google.com/store/apps?hl=ru&gl=US"
+                >DOWNLOAD OUR APP</a
+              >
             </div>
             <img
               class="app-advertising-img-cofee-card"
@@ -274,7 +286,7 @@
 
       <!-- Feedback -->
 
-      <section class="feedback">
+      <section class="feedback" id="reviews">
         <div class="container">
           <img
             class="feedback-coffee__blur"
@@ -338,7 +350,7 @@
         </div>
       </section>
 
-      <footer>
+      <footer id="contacts">
         <div class="container">
           <div class="footer-content">
             <div class="footer-logo-text">
@@ -413,5 +425,6 @@
     </div>
 
     <script src="./js/mobile-navigation.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

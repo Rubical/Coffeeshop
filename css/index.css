@@ -109,6 +109,7 @@ p {
   margin-right: 40px;
 }
 .nav-item a {
+  cursor: pointer;
   font-size: 16px;
   color: #1b1b1d;
 }
