@@ -175,6 +175,9 @@ p {
 }
 .modal-box-item {
   margin-bottom: 20px;
+  a {
+    cursor: pointer;
+  }
 }
 
 .modal-box-btn-wrapper {

@@ -161,6 +161,9 @@ p {
 .modal-box-item {
   margin-bottom: 20px;
 }
+.modal-box-item a {
+  cursor: pointer;
+}
 
 .modal-box-btn-wrapper {
   position: absolute;
