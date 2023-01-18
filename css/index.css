@@ -197,6 +197,11 @@ p {
   margin-right: -100px;
   margin-left: -21px;
 }
+.img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 .header-coffee-cup {
   width: 700px;
@@ -218,7 +223,7 @@ p {
   left: 0;
   width: 400px;
   height: 690px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .menu-text {

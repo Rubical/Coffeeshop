@@ -212,6 +212,12 @@ p {
   position: relative;
   margin-right: -100px;
   margin-left: -21px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  }
 }
 
 .header-coffee-cup {
@@ -235,7 +241,7 @@ p {
   left: 0;
   width: 400px;
   height: 690px;
-  z-index: 2;
+  z-index: ;
 }
 
 .menu-text {
