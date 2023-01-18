@@ -3,22 +3,22 @@ const body = document.body;
 const btnOpen = document.querySelector("[data-action = open]");
 const btnClose = document.querySelector("[data-action = close]");
 
-body.addEventListener("click", function (event) {
-  if (event.target == btnOpen ) {
+btnOpen.addEventListener("click", function (event) {
     const btnOpenCoords = btnOpen.getBoundingClientRect();
     btnClose.style.position = "fixed";
     btnClose.style.left = btnOpenCoords.left + "px";
     mobileNav.classList.remove("none");
     disableScroll();
-  }
 
-
-  else if (event.target == btnClose ) {
-    mobileNav.classList.add("none");
-    enableScroll();
-  }
-  
 });
+
+btnClose.addEventListener("click", function () {
+  mobileNav.classList.add("none");
+    enableScroll();
+  })
+
+
+
 
 function disableScroll() {
   let pagePosition = window.scrollY;
