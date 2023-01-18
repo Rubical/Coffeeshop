@@ -150,11 +150,13 @@ p {
   border-right: 20px solid #eeeff1;
   background-color: #eeeff1;
   z-index: 10;
+  li{
   a {
     color: #1b1b1d;
     font-size: 35px;
     &:hover {
       color: #7c7c94;
+      }
     }
   }
 }

@@ -114,10 +114,10 @@ p {
   border-right: 20px solid #eeeff1;
   background-color: #eeeff1;
   z-index: 10; }
-  .modal-box a {
+  .modal-box li a {
     color: #1b1b1d;
     font-size: 35px; }
-    .modal-box a:hover {
+    .modal-box li a:hover {
       color: #7c7c94; }
 
 .modal-box-container {

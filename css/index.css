@@ -136,11 +136,11 @@ p {
   background-color: #eeeff1;
   z-index: 10;
 }
-.modal-box a {
+.modal-box li a {
   color: #1b1b1d;
   font-size: 35px;
 }
-.modal-box a:hover {
+.modal-box li a:hover {
   color: #7c7c94;
 }
 
