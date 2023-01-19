@@ -5,428 +5,427 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
     <link rel="preload" href="https://fonts.googleapis.com" />
     <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;800&display=swap"
-      rel="stylesheet"
+      rel="preload stylesheet"
     />
     <title>Alowishus</title>
   </head>
   <body>
-    <div class="overflow-wrapper">
-      <!-- Modal box -->
+    <!-- Modal box -->
 
-      <aside class="modal-box none">
-        <div class="modal-box-container">
-          <button id="navOpen" data-action="close">
-            <img
-              src="./image/icons/nav-close.svg"
-              alt=""
-              class="nav-open-svg"
-            />
-          </button>
-          <ul class="modal-box-overlay">
-            <li class="modal-box-item">
-              <a data-location="cafeMenu">Cafe menu</a>
-            </li>
-            <li class="modal-box-item">
-              <a data-location="download">Download</a>
-            </li>
-            <li class="modal-box-item">
-              <a data-location="reviews">Reviews</a>
-            </li>
-            <li class="modal-box-item">
-              <a data-location="contacts">Contacts</a>
-            </li>
-          </ul>
-          <div class="modal-box-btn-wrapper">
-            <a class="cart-wrapper" href="./basket.html">
-              <img src="./image/icons/shopping-cart.svg" alt="cart" />
-            </a>
-            <a id="btn" href="./basket.html">BUY GIFT VOUCHERS</a>
-          </div>
-        </div>
-      </aside>
-
-      <div class="header-wrapper">
-        <div class="container">
-          <header>
-            <!-- Navbar -->
-
-            <nav class="navbar">
-              <a class="navbar-logo" href="/">
-                <img src="./image/logo/logo-header.svg" alt="logo" />
-              </a>
-              <button class="none" id="navOpen" data-action="open">
-                <img
-                  src="./image/icons/nav-open.svg"
-                  alt=""
-                  class="nav-open-svg"
-                />
-              </button>
-              <div class="navbar-collapse">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a data-location="cafeMenu" class="nav-link">Cafe menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a data-location="download" class="nav-link">Download</a>
-                  </li>
-                  <li class="nav-item">
-                    <a data-location="reviews" class="nav-link">Reviews</a>
-                  </li>
-                  <li class="nav-item">
-                    <a data-location="contacts" class="nav-link">Contacts</a>
-                  </li>
-                </ul>
-                <a class="cart-wrapper" href="./basket.html">
-                  <img src="./image/icons/shopping-cart.svg" alt="cart" />
-                </a>
-                <a
-                  class="buy-gift-vouchers"
-                  id="btn"
-                  href="./basket.html"
-                  type="submit"
-                  >BUY GIFT VOUCHERS</a
-                >
-              </div>
-            </nav>
-
-            <!-- Header content -->
-            <div class="header-content">
-              <div class="header-content-wrapper">
-                <div class="header-title">Alowishus Delicious Coffee</div>
-                <p>
-                  A drink from the ‘My Alowishus’ bottled brews range OR grab
-                  one of our delicious coffee’s.
-                </p>
-                <a
-                  id="btn"
-                  href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"
-                  >DOWNLOAD APP</a
-                >
-              </div>
-              <div class="img-wrapper">
-                <img
-                  class="header-coffee-cup"
-                  src="./image/header/coffee-cup.png"
-                  alt="cofee-cup"
-                />
-              </div>
-            </div>
-          </header>
+    <aside class="modal-box none">
+      <div class="modal-box-container">
+        <button id="navOpen" data-action="close">
+          <img
+            src="./image/icons/nav-close.svg"
+            alt=""
+            class="nav-open-svg"
+          />
+        </button>
+        <ul class="modal-box-overlay">
+          <li class="modal-box-item">
+            <a data-location="cafeMenu">Cafe menu</a>
+          </li>
+          <li class="modal-box-item">
+            <a data-location="download">Download</a>
+          </li>
+          <li class="modal-box-item">
+            <a data-location="reviews">Reviews</a>
+          </li>
+          <li class="modal-box-item">
+            <a data-location="contacts">Contacts</a>
+          </li>
+        </ul>
+        <div class="modal-box-btn-wrapper">
+          <a class="cart-wrapper" href="./basket.html">
+            <img src="./image/icons/shopping-cart.svg" alt="cart" />
+          </a>
+          <a id="btn" href="./basket.html">BUY GIFT VOUCHERS</a>
         </div>
       </div>
+    </aside>
 
-      <!-- Menu -->
+    <div class="header-wrapper">
+      <div class="container">
+        <header>
+          <!-- Navbar -->
 
-      <section class="menu" id="cafeMenu">
-        <div class="container">
-          <img
-            class="side-img-menu"
-            src="./image/section-explore/cofee-cup.png"
-            alt="cofee-cup"
-          />
-          <h2>Explore Our Alowishus</h2>
-          <p class="menu-text">
-            A drink from the ‘My Alowishus’ bottled brews range OR grab one of
-            our delicious coffee’s.
-          </p>
-          <div class="menu-card-wrapper">
-            <div class="menu-card">
-              <div class="card-title">Our Catering</div>
-              <p>Alowishus Catering, delicious drop off Catering</p>
-              <img
-                class="catering"
-                src="./image/section-explore/catering.svg"
-                alt="catering"
-              />
-              <button id="btn">ORDER CATHERING</button>
-            </div>
-
-            <div class="menu-card">
-              <div class="card-title">The Food</div>
-              <p>Our entire menu is available as dine in or takeaway.</p>
-              <img
-                class="food"
-                src="./image/section-explore/food.svg"
-                alt="food"
-              />
-              <button id="btn">FOOD MENU</button>
-            </div>
-
-            <div class="menu-card">
-              <div class="card-title">The Gelato</div>
-              <p>Life is like GELATO, enjoy it before it melts.</p>
-              <img
-                class="gelato"
-                src="./image/section-explore/gelato.svg"
-                alt="gelato"
-              />
-              <button id="btn">DISCOVER MORE</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Brochure -->
-
-      <section class="brochure">
-        <div class="container brochure-container">
-          <img src="./image/section-order/cofee-cups.png" alt="cofee-cup" />
-          <h2>Order Your Favourite Coffee</h2>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <a href="./basket.html" id="btn">ORDER NOW</a>
-        </div>
-      </section>
-
-      <!-- Best sellers -->
-
-      <section class="best-sellers">
-        <div class="container">
-          <img
-            class="best-sellers-side-img"
-            src="./image/section-best-selling/side-img.png"
-            alt="side-img"
-          />
-          <h2>Best Selling Coffee</h2>
-          <p class="best-selling-text">
-            A drink from the ‘My Alowishus’ bottled brews range OR grab one of
-            our delicious coffee’s.
-          </p>
-          <div class="best-selling-card-wrapper">
-            <div class="best-selling-card">
-              <img
-                src="./image/section-best-selling/double-espresso.png"
-                alt="Double
-              Espresso"
-              />
-              <small>#1 Selling</small>
-              <h3>Double Espresso</h3>
-              <p>
-                Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                dolor do amet sint. Velit officia consequat duis.
-              </p>
-              <div class="price-block">
-                <a id="btn" href="./basket.html">ORDER NOW</a>
-              </div>
-            </div>
-            <div class="best-selling-card">
-              <img
-                src="./image/section-best-selling/caramel-flappe.png"
-                alt="Caramel
-              Frappe"
-              />
-              <small>#2 Selling</small>
-              <h3>Caramel Frappe</h3>
-              <p>
-                Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                dolor do amet sint. Velit officia consequat duis.
-              </p>
-              <div class="price-block">
-                <a id="btn" href="./basket.html">ORDER NOW</a>
-              </div>
-            </div>
-            <div class="best-selling-card">
-              <img
-                src="./image/section-best-selling/iced-cofee.png"
-                alt="Iced
-              Coffee"
-              />
-              <small>#3 Selling</small>
-              <h3>Iced Coffee</h3>
-              <p>
-                Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                dolor do amet sint. Velit officia consequat duis.
-              </p>
-              <div class="price-block">
-                <a id="btn" href="./basket.html">ORDER NOW</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- App advertising -->
-
-      <section class="app-advertising">
-        <div class="container">
-          <img
-            src="./image/section instant/cofee-cup.png"
-            alt="cofee-cup"
-            class="app-adverising-side-img"
-          />
-          <div class="app-advertising-content">
-            <div class="app-advertising-content-wrapper">
-              <h2>Instant Coffee At Your Home</h2>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-              <div id="download" class="app-advers-btn-wrapper">
-                <a
-                  id="btn"
-                  href="https://play.google.com/store/apps?hl=ru&gl=US"
-                  >DOWNLOAD OUR APP</a
-                >
-              </div>
-            </div>
-            <img
-              class="app-advertising-img-cofee-card"
-              src="./image/section instant/coffee-card.png"
-              alt="cofee-cup"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Feedback -->
-
-      <section class="feedback">
-        <div class="container">
-          <img
-            class="feedback-coffee__blur"
-            src="./image/section-customers/coffee-cup-blur.png"
-            alt="coffee-cup"
-          />
-          <div class="feedback-content">
-            <div class="feedback-card" id="reviews">
-              <img
-                src="./image/section-customers/customer.jpg"
-                alt="customer"
-              />
-              <div class="card-title-wrapper">
-                <h4>Imam White</h4>
-                <img src="./image/section-customers/stars.svg" alt="stars" />
-              </div>
-              <p>
-                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet. Amet minim
-                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia”
-              </p>
-            </div>
-            <div class="feedback-rating">
-              <h2>What Our Customers Say</h2>
-              <div class="feedback-rating-wrapper">
-                <h3>4.9</h3>
-                <div class="feedback-rating-review-wrapper">
-                  <img src="./image/section-customers/stars.svg" alt="stars" />
-                  <p>based on 2452+ reviews</p>
-                </div>
-              </div>
-              <div class="review-btns">
-                <button
-                  class="next__review-btn next__review-btn-left"
-                  data-action="left"
-                >
-                  <img
-                    src="./image/section-customers/pointer-left.svg"
-                    alt=""
-                  />
-                </button>
-                <button
-                  class="next__review-btn next__review-btn-right"
-                  data-action="right"
-                >
-                  <img
-                    src="./image/section-customers/pointer-right.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-          <img
-            class="feedback-coffee"
-            src="./image/section-customers/coffee-cup.png"
-            alt="coffee-cup"
-          />
-        </div>
-      </section>
-
-      <footer>
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo-text">
+          <nav class="navbar">
+            <a class="navbar-logo" href="/">
               <img src="./image/logo/logo-header.svg" alt="logo" />
-              <p>
-                We made it our mission to create community everyday and grow
-                meaningful, lasting relationships with our staff, our suppliers
-                and of course you, our customers.
-              </p>
+            </a>
+            <button class="none" id="navOpen" data-action="open">
+              <img
+                src="./image/icons/nav-open.svg"
+                alt=""
+                class="nav-open-svg"
+              />
+            </button>
+            <div class="navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a data-location="cafeMenu" class="nav-link">Cafe menu</a>
+                </li>
+                <li class="nav-item">
+                  <a data-location="download" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                  <a data-location="reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a data-location="contacts" class="nav-link">Contacts</a>
+                </li>
+              </ul>
+              <a class="cart-wrapper" href="./basket.html">
+                <img src="./image/icons/shopping-cart.svg" alt="cart" />
+              </a>
+              <a
+                class="buy-gift-vouchers"
+                id="btn"
+                href="./basket.html"
+                type="submit"
+                >BUY GIFT VOUCHERS</a
+              >
             </div>
-            <div class="footer-contacts" id="contacts">
-              <h3>Contact Alowishus!</h3>
-              <div class="footer-email-wrapper">
-                <a class="footer-button" href="mailto:alowishus@gmail.com">
-                  <img src="./image/icons/email.svg" alt="email" />
-                </a>
-                <a href="mailto:alowishus@gmail.com">alowishus@gmail.com</a>
-              </div>
-              <div class="footer-phone-wrapper">
-                <a href="tel:+1102142142451" class="footer-button" href="#!">
-                  <img src="./image/icons/phone.svg" alt="phone" />
-                </a>
-                <a href="tel:+1102142142451">+110 214 214 2451</a>
-              </div>
-              <div class="footer-socials-wrapper">
-                <a class="footer-button" href="https://www.facebook.com/">
-                  <img src="./image/icons/facebook.svg" alt="facebook" />
-                </a>
-                <a class="footer-button" href="https://www.instagram.com/">
-                  <img src="./image/icons/inst.svg" alt="inst" />
-                </a>
-                <a class="footer-button" href="https://twitter.com/?lang=ru">
-                  <img src="./image/icons/twtr.svg" alt="twtr" />
-                </a>
-                <a class="footer-button" href="https://www.linkedin.com/">
-                  <img src="./image/icons/linkedin.svg" alt="linkedin" />
-                </a>
+          </nav>
+
+          <!-- Header content -->
+          <div class="header-content">
+            <div class="header-content-wrapper">
+              <div class="header-title">Alowishus Delicious Coffee</div>
+              <p>
+                A drink from the ‘My Alowishus’ bottled brews range OR grab
+                one of our delicious coffee’s.
+              </p>
+              <a
+                id="btn"
+                href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"
+                >DOWNLOAD APP</a
+              >
+            </div>
+            <div class="img-wrapper">
+              <img
+                class="header-coffee-cup"
+                src="./image/header/coffee-cup.png"
+                alt="cofee-cup"
+              />
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <!-- Menu -->
+
+    <section class="menu" id="cafeMenu">
+      <div class="container">
+        <img
+          class="side-img-menu"
+          src="./image/section-explore/cofee-cup.png"
+          alt="cofee-cup"
+        />
+        <h2>Explore Our Alowishus</h2>
+        <p class="menu-text">
+          A drink from the ‘My Alowishus’ bottled brews range OR grab one of
+          our delicious coffee’s.
+        </p>
+        <div class="menu-card-wrapper">
+          <div class="menu-card">
+            <div class="card-title">Our Catering</div>
+            <p>Alowishus Catering, delicious drop off Catering</p>
+            <img
+              class="catering"
+              src="./image/section-explore/catering.svg"
+              alt="catering"
+            />
+            <button id="btn">ORDER CATHERING</button>
+          </div>
+
+          <div class="menu-card">
+            <div class="card-title">The Food</div>
+            <p>Our entire menu is available as dine in or takeaway.</p>
+            <img
+              class="food"
+              src="./image/section-explore/food.svg"
+              alt="food"
+            />
+            <button id="btn">FOOD MENU</button>
+          </div>
+
+          <div class="menu-card">
+            <div class="card-title">The Gelato</div>
+            <p>Life is like GELATO, enjoy it before it melts.</p>
+            <img
+              class="gelato"
+              src="./image/section-explore/gelato.svg"
+              alt="gelato"
+            />
+            <button id="btn">DISCOVER MORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brochure -->
+
+    <section class="brochure">
+      <div class="container brochure-container">
+        <img src="./image/section-order/cofee-cups.png" alt="cofee-cup" />
+        <h2>Order Your Favourite Coffee</h2>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <a href="./basket.html" id="btn">ORDER NOW</a>
+      </div>
+    </section>
+
+    <!-- Best sellers -->
+
+    <section class="best-sellers">
+      <div class="container">
+        <img
+          class="best-sellers-side-img"
+          src="./image/section-best-selling/side-img.png"
+          alt="side-img"
+        />
+        <h2>Best Selling Coffee</h2>
+        <p class="best-selling-text">
+          A drink from the ‘My Alowishus’ bottled brews range OR grab one of
+          our delicious coffee’s.
+        </p>
+        <div class="best-selling-card-wrapper">
+          <div class="best-selling-card">
+            <img
+              src="./image/section-best-selling/double-espresso.png"
+              alt="Double
+            Espresso"
+            />
+            <small>#1 Selling</small>
+            <h3>Double Espresso</h3>
+            <p>
+              Amet minim mollit non deserunt dolor ullamco est sit aliqua
+              dolor do amet sint. Velit officia consequat duis.
+            </p>
+            <div class="price-block">
+              <a id="btn" href="./basket.html">ORDER NOW</a>
+            </div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="./image/section-best-selling/caramel-flappe.png"
+              alt="Caramel
+            Frappe"
+            />
+            <small>#2 Selling</small>
+            <h3>Caramel Frappe</h3>
+            <p>
+              Amet minim mollit non deserunt dolor ullamco est sit aliqua
+              dolor do amet sint. Velit officia consequat duis.
+            </p>
+            <div class="price-block">
+              <a id="btn" href="./basket.html">ORDER NOW</a>
+            </div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="./image/section-best-selling/iced-cofee.png"
+              alt="Iced
+            Coffee"
+            />
+            <small>#3 Selling</small>
+            <h3>Iced Coffee</h3>
+            <p>
+              Amet minim mollit non deserunt dolor ullamco est sit aliqua
+              dolor do amet sint. Velit officia consequat duis.
+            </p>
+            <div class="price-block">
+              <a id="btn" href="./basket.html">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App advertising -->
+
+    <section class="app-advertising">
+      <div class="container">
+        <img
+          src="./image/section instant/cofee-cup.png"
+          alt="cofee-cup"
+          class="app-adverising-side-img"
+        />
+        <div class="app-advertising-content">
+          <div class="app-advertising-content-wrapper">
+            <h2>Instant Coffee At Your Home</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div id="download" class="app-advers-btn-wrapper">
+              <a
+                id="btn"
+                href="https://play.google.com/store/apps?hl=ru&gl=US"
+                >DOWNLOAD OUR APP</a
+              >
+            </div>
+          </div>
+          <img
+            class="app-advertising-img-cofee-card"
+            src="./image/section instant/coffee-card.png"
+            alt="cofee-cup"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+
+    <section class="feedback">
+      <div class="container">
+        <img
+          class="feedback-coffee__blur"
+          src="./image/section-customers/coffee-cup-blur.png"
+          alt="coffee-cup"
+        />
+        <div class="feedback-content">
+          <div class="feedback-card" id="reviews">
+            <img
+              src="./image/section-customers/customer.jpg"
+              alt="customer"
+            />
+            <div class="card-title-wrapper">
+              <h4>Imam White</h4>
+              <img src="./image/section-customers/stars.svg" alt="stars" />
+            </div>
+            <p>
+              “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet. Amet minim
+              mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia”
+            </p>
+          </div>
+          <div class="feedback-rating">
+            <h2>What Our Customers Say</h2>
+            <div class="feedback-rating-wrapper">
+              <h3>4.9</h3>
+              <div class="feedback-rating-review-wrapper">
+                <img src="./image/section-customers/stars.svg" alt="stars" />
+                <p>based on 2452+ reviews</p>
               </div>
             </div>
-            <div class="footer-navi">
-              <h3>Store Locations</h3>
-              <p>
-                Find your nearest Alowishus store with opening hours, location
-                and contact details.
-              </p>
-              <a href="#!">
-                <span>FIND MY ALOWISHUS</span>
-                <img src="./image/section-customers/pointer-right.svg" alt="" />
+            <div class="review-btns">
+              <button
+                class="next__review-btn next__review-btn-left"
+                data-action="left"
+              >
+                <img
+                  src="./image/section-customers/pointer-left.svg"
+                  alt=""
+                />
+              </button>
+              <button
+                class="next__review-btn next__review-btn-right"
+                data-action="right"
+              >
+                <img
+                  src="./image/section-customers/pointer-right.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <img
+          class="feedback-coffee"
+          src="./image/section-customers/coffee-cup.png"
+          alt="coffee-cup"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-text">
+            <img src="./image/logo/logo-header.svg" alt="logo" />
+            <p>
+              We made it our mission to create community everyday and grow
+              meaningful, lasting relationships with our staff, our suppliers
+              and of course you, our customers.
+            </p>
+          </div>
+          <div class="footer-contacts" id="contacts">
+            <h3>Contact Alowishus!</h3>
+            <div class="footer-email-wrapper">
+              <a class="footer-button" href="mailto:alowishus@gmail.com">
+                <img src="./image/icons/email.svg" alt="email" />
+              </a>
+              <a href="mailto:alowishus@gmail.com">alowishus@gmail.com</a>
+            </div>
+            <div class="footer-phone-wrapper">
+              <a href="tel:+1102142142451" class="footer-button" href="#!">
+                <img src="./image/icons/phone.svg" alt="phone" />
+              </a>
+              <a href="tel:+1102142142451">+110 214 214 2451</a>
+            </div>
+            <div class="footer-socials-wrapper">
+              <a class="footer-button" href="https://www.facebook.com/">
+                <img src="./image/icons/facebook.svg" alt="facebook" />
+              </a>
+              <a class="footer-button" href="https://www.instagram.com/">
+                <img src="./image/icons/inst.svg" alt="inst" />
+              </a>
+              <a class="footer-button" href="https://twitter.com/?lang=ru">
+                <img src="./image/icons/twtr.svg" alt="twtr" />
+              </a>
+              <a class="footer-button" href="https://www.linkedin.com/">
+                <img src="./image/icons/linkedin.svg" alt="linkedin" />
               </a>
             </div>
-            <div class="footer-subscribe">
-              <h3>First One’s On Us!</h3>
-              <form action="">
-                <input type="text" placeholder="E-mail" />
-                <button class="footer-subscribe-btn" id="btn">SUBSCRIBE</button>
-              </form>
-            </div>
           </div>
-          <hr />
-          <div class="footer-additional">
-            <div class="footer-copyright">
-              Copyright © 2022 <span>Alowishus Delicious</span>
-            </div>
-            <div class="footer-documents">
-              <a href="#!">Terms of Use</a>
-              <span>|</span>
-              <a href="#!">Privacy Policy</a>
-            </div>
+          <div class="footer-navi">
+            <h3>Store Locations</h3>
+            <p>
+              Find your nearest Alowishus store with opening hours, location
+              and contact details.
+            </p>
+            <a href="#!">
+              <span>FIND MY ALOWISHUS</span>
+              <img src="./image/section-customers/pointer-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="footer-subscribe">
+            <h3>First One’s On Us!</h3>
+            <form action="">
+              <input type="text" placeholder="E-mail" />
+              <button class="footer-subscribe-btn" id="btn">SUBSCRIBE</button>
+            </form>
           </div>
         </div>
-      </footer>
-    </div>
+        <hr />
+        <div class="footer-additional">
+          <div class="footer-copyright">
+            Copyright © 2022 <span>Alowishus Delicious</span>
+          </div>
+          <div class="footer-documents">
+            <a href="#!">Terms of Use</a>
+            <span>|</span>
+            <a href="#!">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/mobile-navigation.js"></script>
     <script src="./js/scroll.js"></script>

@@ -133,7 +133,6 @@ p {
   position: fixed;
   width: 100%;
   height: 100%;
-  border-right: 20px solid #eeeff1;
   background-color: #eeeff1;
   z-index: 10;
 }
@@ -150,8 +149,9 @@ p {
   width: 100%;
   height: 100%;
   display: flex;
+  margin-left: 100px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .modal-box-overlay {
@@ -171,8 +171,10 @@ p {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 20px;
+  margin-left: -20px;
 }
 
 /*Header content */
@@ -207,7 +209,8 @@ p {
 .img-wrapper img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-coffee-cup {
@@ -244,7 +247,8 @@ p {
   justify-content: center;
   align-items: center;
   row-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .menu-card {
@@ -323,7 +327,8 @@ p {
 
 .best-selling-card-wrapper {
   display: flex;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .best-selling-card {
@@ -483,7 +488,7 @@ p {
   border: 2px solid rgba(255, 255, 255, 0);
 }
 .next__review-btn:hover {
-  background-color: #cdcbcb;
+  background-color: rgb(205, 203, 203);
 }
 .next__review-btn:active {
   border: 2px solid #1b1b1d;
@@ -572,7 +577,8 @@ footer a:hover {
 
 .footer-socials-wrapper {
   display: flex;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 
 .footer-navi p {
@@ -614,7 +620,7 @@ footer a:hover {
 hr {
   width: 100%;
   height: 1px;
-  background-color: #1b1b1d18;
+  background-color: rgba(27, 27, 29, 0.0941176471);
 }
 
 .footer-additional {
@@ -646,4 +652,4 @@ hr {
   line-height: 30px;
   color: #64646a;
   margin: 0 12px;
-}
+}/*# sourceMappingURL=main.css.map */
