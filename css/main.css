@@ -528,8 +528,25 @@ p {
 }
 
 /* Footer */
+footer {
+  position: relative;
+}
 footer a:hover {
   color: #111112;
+}
+
+.modal-footer .container {
+  position: absolute;
+  max-width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 40px;
+  border: solid #1b1b1d 4px;
+  background-color: #fff;
 }
 
 .footer-content {

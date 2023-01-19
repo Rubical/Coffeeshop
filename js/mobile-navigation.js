@@ -6,25 +6,25 @@ const btnClose = document.querySelector("[data-action = close]");
 /* Mobile nav functional */
 
 btnOpen.addEventListener("click", function () {
-  showModal()
-
+  showModal();
+  disableScroll();
 });
 
 btnClose.addEventListener("click", function () {
   hideModal();
-    enableScroll();
-  })
+  enableScroll();
+});
 
-  function showModal() {
-    const btnOpenCoords = btnOpen.getBoundingClientRect();
-    btnClose.style.position = "fixed";
-    btnClose.style.left = btnOpenCoords.left + "px";
-    mobileNav.classList.remove("none");
-  }
-  
-  function hideModal() {
-    mobileNav.classList.add("none");
-  }
+function showModal() {
+  const btnOpenCoords = btnOpen.getBoundingClientRect();
+  btnClose.style.position = "fixed";
+  btnClose.style.left = btnOpenCoords.left + "px";
+  mobileNav.classList.remove("none");
+}
+
+function hideModal() {
+  mobileNav.classList.add("none");
+}
 
 function disableScroll() {
   let pagePosition = window.scrollY;
@@ -40,7 +40,6 @@ function enableScroll() {
   window.scroll({ top: pagePosition, left: 0 });
   document.body.removeAttribute("data-position");
 }
-
 
 /* Mobile nav scroll*/
 
@@ -63,4 +62,3 @@ mobileNav.addEventListener("click", function (event) {
     contacts.scrollIntoView({ block: "center", behavior: "smooth" });
   }
 });
-
