@@ -155,7 +155,7 @@ p {
 }
 
 .modal-box-overlay {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .modal-box-item {
@@ -171,6 +171,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  align-self: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 20px;
