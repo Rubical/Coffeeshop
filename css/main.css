@@ -27,6 +27,13 @@ body {
   width: 100%;
 }
 
+.btn__not-active {
+  cursor: default;
+}
+.btn__not-active:hover {
+  transform: none;
+}
+
 h2 {
   margin-bottom: 25px;
   font-size: 64px;
@@ -171,7 +178,6 @@ p {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  align-self: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 20px;
@@ -244,6 +250,7 @@ p {
 }
 
 .menu-card-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,12 +259,26 @@ p {
        column-gap: 30px;
 }
 
+.coming-soon-chains {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 400px;
+  top: 0px;
+  transform: scale(1.5);
+  transition: transform 0.7s ease-in;
+}
+
+.coming-soon-chains__scaled {
+  transform: scale(1);
+}
+
 .menu-card {
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 40px;
+  padding: 40px;
   background-color: #fff;
   filter: drop-shadow(0px 30px 60px rgba(163, 168, 179, 0.15));
   border-radius: 24px;
@@ -275,6 +296,10 @@ p {
 }
 .menu-card img {
   margin-bottom: 60px;
+}
+.menu-card button {
+  position: relative;
+  z-index: 500;
 }
 
 .catering {
