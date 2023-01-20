@@ -1,13 +1,13 @@
 const form = document.querySelector("footer form");
 const footer = document.querySelector("footer");
 const modalFooter = document.querySelector(".modal-footer");
+const modalFooterContainer = modalFooter.querySelector('.container')
 
-console.log(footer.getBoundingClientRect());
 
-form.addEventListener("submit", function () {
-  const footerCoords = footer.getBoundingClientRect();
-  modalFooter.style.top = footerCoords.top - footerCoords.height / 2 + "px";
+form.addEventListener("submit", function (event) {
+  event.preventDefault()
   modalFooter.classList.remove("none");
+  modalFooterContainer.style.left = ((window.innerWidth - modalFooterContainer.offsetWidth)/2) + 'px'
 
-  setTimeout(() => modalFooter.classList.add("none"), 5000);
+  setTimeout(() => modalFooter.classList.add("none"), 4000);
 });

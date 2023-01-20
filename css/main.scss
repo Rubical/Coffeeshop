@@ -566,8 +566,10 @@ footer {
 .modal-footer {
   .container {
     position: absolute;
+    bottom: 150px;
+    z-index: 150;
     max-width: 400px;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
