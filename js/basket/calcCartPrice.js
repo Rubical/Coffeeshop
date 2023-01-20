@@ -4,6 +4,7 @@ function calcCartPrice() {
   const totalPriceEl = document.querySelector(".total-price");
   const deliveryCost = document.querySelector(".delivery-cost");
   const cartDelivery = document.querySelector("[data-cart-delivery]");
+  console.log(deliveryCost)
 
   let priceTotal = 0;
 
