@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Double Espresso",
+    "quantity": 300,
+    "price": 5,
+    "imgSrc": "double-espresso.png"
+  },
+  {
+    "id": 2,
+    "title": "Caramel Frappe",
+    "quantity": 300,
+    "price": 7,
+    "imgSrc": "caramel-flappe.png"
+  },
+  {
+    "id": 3,
+    "title": "Iced coffee",
+    "quantity": 300,
+    "price": 6,
+    "imgSrc": "iced-cofee.png"
+  }
+]

@@ -34,87 +34,7 @@
       <div class="container">
 
         <div class="container-grid">
-          <div class="cards-wrapper">
-            <div class="product-card">
-                <img
-                src="./image/section-best-selling/double-espresso.png"
-                alt="Double
-              Espresso"
-              />
-              <small>#1 Selling</small>
-              <h3>Double Espresso</h3>
-              <p>
-                Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                dolor do amet sint. Velit officia consequat duis.
-              </p>
-              <div class="details-wrapper">
-                <div class="items counter-wrapper">
-                    <div class="items__control" data-action="minus">-</div>
-                    <div class="items__current" data-counter="">1</div>
-                    <div class="items__control" data-action="plus">+</div>
-                </div>
-                <div class="price">
-                    <div class="price__weight">300 ml.</div>
-                    <div class="price__currency">5.9 $</div>
-                </div>
-               
-            </div>
-            <button data-cart="" type="button" class="btn">Add to cart</button>
-            </div>
-
-            <div class="product-card">
-              <img
-                  src="./image/section-best-selling/caramel-flappe.png"
-                  alt="Caramel
-                Frappe"
-                />
-                <small>#2 Selling</small>
-                <h3>Caramel Frappe</h3>
-                <p>
-                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                  dolor do amet sint. Velit officia consequat duis.
-                </p>
-                <div class="details-wrapper">
-                  <div class="items counter-wrapper">
-                      <div class="items__control" data-action="minus">-</div>
-                      <div class="items__current" data-counter="">1</div>
-                      <div class="items__control" data-action="plus">+</div>
-                  </div>
-
-                  <div class="price">
-                    <div class="price__weight">300 ml.</div>
-                    <div class="price__currency">5.9 $</div>
-                  </div>
-                  
-              </div>
-              <button data-cart="" type="button" class="btn">Add to cart</button>
-            </div>
-
-            <div class="product-card">
-              <img
-              src="./image/section-best-selling/iced-cofee.png"
-              alt="Iced
-            Coffee"
-            />
-              <small>#3 Selling</small>
-              <h3>Iced Coffee</h3>
-              <p>
-                Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                dolor do amet sint. Velit officia consequat duis.
-              </p>
-              <div class="details-wrapper">
-                <div class="items counter-wrapper">
-                    <div class="items__control" data-action="minus">-</div>
-                    <div class="items__current" data-counter="">1</div>
-                    <div class="items__control" data-action="plus">+</div>
-                </div>
-                <div class="price">
-                  <div class="price__weight">300 ml.</div>
-                  <div class="price__currency">5.9 $</div>
-                </div>
-              </div>
-              <button data-cart="" type="button" class="btn">Add to cart</button>
-            </div>
+          <div class="cards-wrapper" id="products-container">
           </div>
 
 
@@ -122,21 +42,40 @@
             <div class="basket-container">
 
               <h3>YOUR ORDER</h3>
-              <div class="empty-basket">Your basket is empty</div>
+              <div data-cart-empty class="empty-basket">Your basket is empty</div>
+              <div class="cart-wrapper"></div>
               <div class="cart-total">
+                <p data-cart-delivery class="none"><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
                 <p>
                   <span class="h5">Total :</span>
-                  <span>0</span>
+                  <span class="total-price">0</span>
                   <span>$</span>
                 </p>
               </div>
+              <div id="order-form" class="card-body border-top none">
+                <h5 class="card-title">Complete order</h4>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your phone number">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Order</button>
+                </form>
+              </div>
             </div>
           </div>
+
+          
 
         </div>
       </div>
     </div>
        
+
+    <script src="./js/basket/renderProducts.js"></script>
+	<script src="./js/basket/toggleCartStatus.js"></script>
+	<script src="./js/basket/calcCartPrice.js" ></script>
+	<script src="./js/basket/counter.js"></script>
+	<script src="./js/basket/cart.js"></script>
     
 </body>
 </html>
