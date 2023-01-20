@@ -46,12 +46,34 @@ body {
   /* Header */ 
 
   header {
+    position: relative;
     margin-top: 50px;
-    img {
+    margin-bottom: 150px;
+    .logo {
         width: 200px;
         margin-bottom: 20px;
-
+      
     }
+  }
+
+  .back-to-main {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      width: 70px;
+    };
   }
 
 
@@ -59,16 +81,20 @@ body {
 
   .container-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr;
   }
 
-  .product-wrapper {
- 
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 30px;
   }
   
   .product-card {
     width: 393px;
     background-color: white;
+    border: 3px #1b1b1b solid ;
     border-radius: 24px;
     padding: 41px 30px 35px 0;
     small {
@@ -96,12 +122,68 @@ body {
       font-size: 20px;
     }
   }
-  .price-block {
+
+  .details-wrapper {
     display: flex;
-    margin-left: 30px;
-    .price {
-      font-size: 30px;
-      margin-top: 6px;
-      margin-right: 63px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 80%;
+    margin: 0 auto 25px auto;
+
+  }
+  .items {
+    background: #f2ede7;
+    border-radius: 8px;
+    width: 120px;
+    display: flex;
+    font-size: 18px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .counter-wrapper {
+  }
+  .items__control {
+    width: 40px;
+    text-align: center;
+    transition: background-color 0.1s ease-in;
+    &:hover {
+      background-color: #83838392;
+    }
+
+  }
+  .items__current {
+    width: 40px;
+    text-align: center;
+
+  }
+
+  .price__weight {
+    color: #6c757d;
+    font-size: 80%;
+    line-height: 1;
+  }
+
+  .price__currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .btn {
+    border: 1px solid #1b1b1b;
+    padding: 0.375rem 0.75rem;
+    margin-left: 15px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    &:hover {
+      color: #fff;
+    background-color: #1b1b1b;
+    border-color: #1b1b1be4;
     }
   }
+

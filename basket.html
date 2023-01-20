@@ -18,17 +18,22 @@
 <body>
     <header>
         <div class="container">
-            <img src="./image/logo/logo-header.svg" alt="logo">
-            <h1>Alowishus coffee</h1>
-            <p>Quickly and delicious</p>
+          <a class="back-to-main" href="./index.html">
+            <img src="./image/section-customers/pointer-left.svg" alt="">
+          </a>
+          <img class="logo" src="./image/logo/logo-header.svg" alt="logo">
+          <p>Quickly and delicious</p>
         </div>
     </header>
 
     <div class="product-wrapper">
+      <div class="container">
+
         <div class="container-grid">
+          <div class="cards-wrapper">
             <div class="product-card">
                 <img
-                src="./image/section-best-selling/double-espresso.svg"
+                src="./image/section-best-selling/double-espresso.png"
                 alt="Double
               Espresso"
               />
@@ -38,45 +43,93 @@
                 Amet minim mollit non deserunt dolor ullamco est sit aliqua
                 dolor do amet sint. Velit officia consequat duis.
               </p>
-              <div class="price-block">
-                <div class="price">$5.99</div>
-                <button id="btn">ORDER NOW</button>
+              <div class="details-wrapper">
+                <div class="items counter-wrapper">
+                    <div class="items__control" data-action="minus">-</div>
+                    <div class="items__current" data-counter="">1</div>
+                    <div class="items__control" data-action="plus">+</div>
+                </div>
+                <div class="price">
+                    <div class="price__weight">300 ml.</div>
+                    <div class="price__currency">5.9 $</div>
+                </div>
+               
             </div>
+            <button data-cart="" type="button" class="btn">Add to cart</button>
+            </div>
+
+
             <div class="product-card">
-                <img
-                    src="./image/section-best-selling/caramel-flappe.svg"
-                    alt="Caramel
-                  Frappe"
-                  />
-                  <small>#2 Selling</small>
-                  <h3>Caramel Frappe</h3>
-                  <p>
-                    Amet minim mollit non deserunt dolor ullamco est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis.
-                  </p>
-                  <div class="price-block">
-                    <div class="price">$5.99</div>
-                    <button id="btn">ORDER NOW</button>
+              <img
+                  src="./image/section-best-selling/caramel-flappe.png"
+                  alt="Caramel
+                Frappe"
+                />
+                <small>#2 Selling</small>
+                <h3>Caramel Frappe</h3>
+                <p>
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div class="details-wrapper">
+                  <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter="">1</div>
+                      <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <div class="product-card">
-                    <img
-                    src="./image/section-best-selling/iced-cofee.svg"
-                    alt="Iced
-                  Coffee"
-                  />
+
+                  <div class="price">
+                    <div class="price__weight">300 ml.</div>
+                    <div class="price__currency">5.9 $</div>
+                  </div>
+                  
+              </div>
+              <button data-cart="" type="button" class="btn">Add to cart</button>
+              </div>
+
+                <div class="product-card">
+                  <img
+                  src="./image/section-best-selling/iced-cofee.png"
+                  alt="Iced
+                Coffee"
+                />
                   <small>#3 Selling</small>
                   <h3>Iced Coffee</h3>
                   <p>
                     Amet minim mollit non deserunt dolor ullamco est sit aliqua
                     dolor do amet sint. Velit officia consequat duis.
                   </p>
-                  <div class="price-block">
-                    <div class="price">$5.99</div>
-                    <button id="btn">ORDER NOW</button>
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                        <div class="items__control" data-action="minus">-</div>
+                        <div class="items__current" data-counter="">1</div>
+                        <div class="items__control" data-action="plus">+</div>
+                    </div>
+                    <div class="price">
+                      <div class="price__weight">300 ml.</div>
+                      <div class="price__currency">5.9 $</div>
+                    </div>
                   </div>
-                  </div>
+                  <button data-cart="" type="button" class="btn">Add to cart</button>
+                </div>
+          </div>
+
+
+          <div class="basket">
+            <h3>Your order</h3>
+            <div>Your basket is empty</div>
+            <div class="cart-total">
+              <p>
+                <span>Total :</span>
+                <span>0</span>
+                <span>$</span>
+
+              </p>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
        
     
