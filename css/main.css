@@ -358,7 +358,7 @@ p {
 }
 
 .best-selling-card {
-  width: 393px;
+  max-width: 393px;
   background-color: white;
   border-radius: 24px;
   padding: 41px 30px 35px 0;
